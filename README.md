@@ -89,7 +89,7 @@ Edits and
 Checks 	25 - 26 
 August	Reviewed everything, added final touches, and proofread the work.
 
-## BUDGET
+### BUDGET
  
 ITEM	ESTIMATED
 COST (in Rands)
