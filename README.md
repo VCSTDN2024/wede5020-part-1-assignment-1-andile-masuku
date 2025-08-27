@@ -67,25 +67,39 @@ To deliver high-quality construction services that exceed client expectations, w
 - Frameworks/Languages: HTML, CSS, JavaScript
 
 ## Timeline and Milestones
-|  |  |  | 
-|  |  |  | 
-|  |  |  | 
-|  |  |  | 
-|  |  |  | 
-|  |  |  | 
+TASK	DATES	PURPOSE
+Planning 
+And 
+Research 	1 - 4 
+August 	Mapped out our goals, audience, and what makes
+It a company to trust.
+Wireframing
+And
+Design	5 - 9 
+August	Sketched layout ideas, chose colours that reflect the brand.
+Development
+Starts	10 - 18 
+August	Built the structure, added content, and made sure it is clear and easy to read.
+Testing
+And
+Revision	19 - 24 
+August	Checked if the website can be accessed in different platforms and if it also works the way it should. 
+Final
+Edits and
+Checks 	25 - 26 
+August	Reviewed everything, added final touches, and proofread the work.
 
+## BUDGET
+ 
+ITEM	ESTIMATED
+COST (in Rands)
+Domain Registration		R 120
+Hosting	R1 000
+Website Design	R3 000
+Development & Testing	R4 000
+Maintenance (6 months)	R1 500
+Total Estimated 	R9 620
 
-
-## Budget (Estimated)
-|  |  |  | 
-|  |  |  | 
-|  |  |  | 
-|  |  |  | 
-|  |  |  | 
-|  |  |  | 
-
-
-## Total Estimated Budget: R9,620 ZAR
 
 ## Reason for Website Proposal Chosen
 Melox Construction is more than a business—it’s a story of building homes, communities, and trust. This website is a digital extension of that story, designed to reflect Melox’s values, showcase its work, and connect with clients across the region. It’s a step toward greater visibility, deeper engagement, and continued growth rooted in South African excellence.
