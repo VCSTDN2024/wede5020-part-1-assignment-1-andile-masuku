@@ -137,3 +137,4 @@ Melox Construction is more than a business—it’s a story of building homes, c
 <img width="1075" height="811" alt="Drawing 2 (1)" src="https://github.com/user-attachments/assets/f8da877b-6c86-43ae-8de5-2bd92c488d16" />
 
 ## Git link
+https://github.com/VCSTDN2024/wede5020-part-1-assignment-1-andile-masuku.git
