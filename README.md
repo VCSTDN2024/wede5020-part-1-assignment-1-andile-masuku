@@ -132,3 +132,8 @@ Total Estimated 	R9 620
 
 ## Reason for Website Proposal Chosen
 Melox Construction is more than a business—it’s a story of building homes, communities, and trust. This website is a digital extension of that story, designed to reflect Melox’s values, showcase its work, and connect with clients across the region. It’s a step toward greater visibility, deeper engagement, and continued growth rooted in South African excellence.
+
+## Site Map
+<img width="1075" height="811" alt="Drawing 2 (1)" src="https://github.com/user-attachments/assets/f8da877b-6c86-43ae-8de5-2bd92c488d16" />
+
+## Git link
