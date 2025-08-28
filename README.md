@@ -11,8 +11,10 @@ This website proposal aims to showcase Melox’s legacy, services, and values th
 
 ## Vision
 To become a leading construction brand in South Africa and the SADC region, known for excellence, integrity, and community impact.
+
 ##Mission
 To deliver high-quality construction services that exceed client expectations, while empowering local communities and building a reputable, globally connected brand.
+
 ## Target Audience
 - High-income earners aged 30–65
 - Homeowners seeking modern, high-standard finishes
@@ -21,12 +23,14 @@ To deliver high-quality construction services that exceed client expectations, w
 - Individuals looking for reliable, locally rooted construction services
 
 ## Website Goals and Objectives
+
 ### *Goals*
 - Expand brand visibility across South Africa and the SADC region
 - Make services and contact options easily accessible
 - Share Melox’s story and values in a relatable way
 - Showcase completed projects and service quality
 - Improve based on client feedback and engagement
+- 
 ### *Objectives*
 - Create a clean portfolio page with project images and locations
 - Highlight long-term partnerships (e.g., Plascon)
@@ -34,6 +38,7 @@ To deliver high-quality construction services that exceed client expectations, w
 - Write clear service descriptions for painting, waterproofing, and tiling
 - Include team profiles, testimonials, and community impact stories
 - Add a blog or update section for ongoing engagement
+- 
 ### Key Performance Indicators (KPIs)
 - Website traffic
 - Quote form submissions
@@ -42,20 +47,26 @@ To deliver high-quality construction services that exceed client expectations, w
 - Mobile responsiveness and load speed
 
 ## Proposed Website Features and Functionality
+
 ### Pages & Features
+
 - *Homepage*: Welcoming intro, service highlights, call-to-actions
   <img width="602" height="446" alt="Screenshot 2025-08-27 173250" src="https://github.com/user-attachments/assets/c0c457e7-71da-4e92-9171-7bc02b2d872f" />
   
 - *About Page*: Company history, mission, vision, community impact
-<img width="602" height="446" alt="Screenshot 2025-08-27 113126" src="https://github.com/user-attachments/assets/bdb88012-5826-4a2c-8246-3f47feb4b14c" />
+  
+  <img width="602" height="446" alt="Screenshot 2025-08-27 113126" src="https://github.com/user-attachments/assets/bdb88012-5826-4a2c-8246-3f47feb4b14c" />
 
 - *Services Page*: Painting, waterproofing, tiling—clear and mobile-friendly
+  
   <img width="602" height="446" alt="Screenshot 2025-08-27 213143" src="https://github.com/user-attachments/assets/055cadc7-a55a-4c93-b217-ebf025db058e" />
 
 - *Gallery Page*: High-quality images of completed projects
+  
   <img width="602" height="446" alt="Screenshot 2025-08-27 213216" src="https://github.com/user-attachments/assets/9f89eea4-6aac-4e2b-a904-f2b42038bcb4" />
 
 - *Projects Page*: Case studies, locations, scope, and timelines
+  
   <img width="602" height="446" alt="Screenshot 2025-08-27 213530" src="https://github.com/user-attachments/assets/ee7b3351-856e-4541-a3de-b1381621198a" />
 
 - *Queries Page*: General enquiry form
@@ -63,9 +74,11 @@ To deliver high-quality construction services that exceed client expectations, w
   <img width="602" height="446" alt="Screenshot 2025-08-27 213554" src="https://github.com/user-attachments/assets/8f93b0a0-efa2-4c8e-9cf1-ab5a6c8cf07f" />
 
 - *Request a Quote Page*: Submission form with 24-hour response goal
+
   <img width="602" height="446" alt="Screenshot 2025-08-27 213632" src="https://github.com/user-attachments/assets/f85a5093-9a79-4878-ae0f-b802b05ad290" />
 
 - *Contacts Page*: Phone, email, address, and social media links
+  
   <img width="602" height="446" alt="Screenshot 2025-08-27 155230" src="https://github.com/user-attachments/assets/b5318f11-cc68-43da-850d-a74a25558b3a" />
 
 ## Design and User Experience
