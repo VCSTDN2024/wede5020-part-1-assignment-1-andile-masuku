@@ -44,13 +44,28 @@ To deliver high-quality construction services that exceed client expectations, w
 ## Proposed Website Features and Functionality
 ### Pages & Features
 - *Homepage*: Welcoming intro, service highlights, call-to-actions
+  <img width="437" height="288" alt="Screenshot 2025-08-27 173250" src="https://github.com/user-attachments/assets/c0c457e7-71da-4e92-9171-7bc02b2d872f" />
+  
 - *About Page*: Company history, mission, vision, community impact
+<img width="446" height="262" alt="Screenshot 2025-08-27 113126" src="https://github.com/user-attachments/assets/bdb88012-5826-4a2c-8246-3f47feb4b14c" />
+
 - *Services Page*: Painting, waterproofing, tiling—clear and mobile-friendly
+  <img width="314" height="236" alt="Screenshot 2025-08-27 213143" src="https://github.com/user-attachments/assets/055cadc7-a55a-4c93-b217-ebf025db058e" />
+
 - *Gallery Page*: High-quality images of completed projects
+  <img width="461" height="269" alt="Screenshot 2025-08-27 213216" src="https://github.com/user-attachments/assets/9f89eea4-6aac-4e2b-a904-f2b42038bcb4" />
+
 - *Projects Page*: Case studies, locations, scope, and timelines
+  <img width="464" height="262" alt="Screenshot 2025-08-27 213530" src="https://github.com/user-attachments/assets/ee7b3351-856e-4541-a3de-b1381621198a" />
+
 - *Queries Page*: General enquiry form
+  <img width="454" height="260" alt="Screenshot 2025-08-27 213554" src="https://github.com/user-attachments/assets/8f93b0a0-efa2-4c8e-9cf1-ab5a6c8cf07f" />
+
 - *Request a Quote Page*: Submission form with 24-hour response goal
+  <img width="458" height="253" alt="Screenshot 2025-08-27 213632" src="https://github.com/user-attachments/assets/f85a5093-9a79-4878-ae0f-b802b05ad290" />
+
 - *Contacts Page*: Phone, email, address, and social media links
+  <img width="602" height="446" alt="Screenshot 2025-08-27 155230" src="https://github.com/user-attachments/assets/b5318f11-cc68-43da-850d-a74a25558b3a" />
 
 ## Design and User Experience
 - Colour Scheme: Orange, blue, red, white, grey
