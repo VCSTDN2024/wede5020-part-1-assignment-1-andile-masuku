@@ -1,6 +1,4 @@
-/* style.css */
-
-/* 1. Base Styles & Reset */
+/* Home Page */
 * {
   margin: 0;
   padding: 0;
@@ -11,21 +9,22 @@ body {
   font-size: 1rem;
   line-height: 1.6;
   color: #333;
-  background-color: #f9f9f9;
+  background-color: #adabab;
   padding: 0 1rem;
 }
+/* General image responsiveness */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* 2. Header & Navigation */
+/* Header & Navigation */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 0;
-  background-color: #fff;
+  background-color: rgba(190, 188, 188, 0.95);
   border-bottom: 2px solid #e0e0e0;
 }
 nav ul {
@@ -42,15 +41,17 @@ nav a:hover {
   color: #e67e22;
 }
 
-/* 3. Hero Section */
-section:first-of-type {
-  background-image: url('gallery/hero.jpg'); /* Replace with actual hero image path */
+/*  Hero Section */
+/* Home Page Hero Section Background */
+.home-page section:first-of-type {
+  background-image: url('gallery/home\ bg.png');
   background-size: cover;
   background-position: center;
   color: white;
   text-align: center;
   padding: 4rem 1rem;
 }
+
 section:first-of-type h1 {
   font-size: 2.5rem;
   color: #e67e22;
@@ -72,7 +73,7 @@ section:first-of-type p a:hover {
   background-color: #cf711f;
 }
 
-/* 4. Content Sections */
+/* Content Sections */
 section {
   margin: 2rem 0;
 }
@@ -111,7 +112,7 @@ section h3 {
 #meloxcon img {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  max-width: 100%;
+  max-width: 100%; /* Ensures it is responsive within its grid column */
   height: auto;
 }
 section#introduction,
@@ -122,7 +123,7 @@ section#summary {
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
-/* 5. Footer */
+/* Footer */
 footer {
   background-color: #333;
   color: white;
@@ -139,7 +140,7 @@ footer ul {
   list-style: none;
 }
 footer ul li img {
-  width: 32px;
+  width: 32px; /* Fixed size for social icons */
   height: 32px;
   transition: transform 0.3s ease;
 }
@@ -147,7 +148,7 @@ footer ul li img:hover {
   transform: scale(1.1);
 }
 
-/* 6. Responsive Design */
+/* Responsive Design */
 @media (max-width: 768px) {
   header {
     flex-direction: column;
@@ -168,31 +169,17 @@ footer ul li img:hover {
   }
 }
 
-/* 1. Base Styles & Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
-  font-family: 'Segoe UI', sans-serif;
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #333;
-  background-color: #f9f9f9;
-}
-
 /* 2. Header */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #fff;
+  background-color: rgba(190, 188, 188, 0.95);
   border-bottom: 2px solid #e0e0e0;
 }
 header img {
-  width: 80px;
+  width: 80px; /* Logo fixed size */
   height: auto;
 }
 nav ul {
@@ -209,9 +196,9 @@ nav a:hover {
   color: #e67e22;
 }
 
-/* 3. About Section with Background Image */
+/*  About Section with Background Image */
 #about {
-  background-image: url('gallery/about-bg.jpg'); /* Replace with your actual image path */
+  background-image: url('gallery/about\ bg.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -225,7 +212,7 @@ nav a:hover {
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  background-color: rgba(0, 0, 0, 0.4); /* Soft overlay */
+  background-color: rgba(0, 0, 0, 0.4);
   z-index: 0;
 }
 #about h1,
@@ -241,7 +228,7 @@ nav a:hover {
   font-size: 1.25rem;
 }
 
-/* 4. Content Sections */
+/* Content Sections */
 main section {
   background-color: #fff;
   padding: 2rem;
@@ -260,13 +247,13 @@ main section ul {
   color: #333;
 }
 
-/* 5. Footer (Mirrors Header) */
+/* Footer */
 footer {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 2rem;
-  background-color: #fff;
+  background-color: rgba(190, 188, 188, 0.95);
   border-top: 2px solid #e0e0e0;
 }
 footer h3 {
@@ -280,7 +267,7 @@ footer ul {
   list-style: none;
 }
 footer ul li img {
-  width: 32px;
+  width: 32px; /* Fixed size for social icons */
   height: 32px;
   transition: transform 0.3s ease;
 }
@@ -288,7 +275,7 @@ footer ul li img:hover {
   transform: scale(1.1);
 }
 
-/* 6. Responsive Design */
+/* Responsive Design */
 @media (max-width: 768px) {
   header {
     flex-direction: column;
@@ -311,22 +298,20 @@ footer ul li img:hover {
     font-size: 1rem;
   }
 }
-/* 1. Full Page Background */
+
+/*Services Page */
 body {
-  background-image: url('gallery/services-bg.jpg'); /* Replace with your actual image path */
-  background-size: cover;
+  background-image: url('gallery/services-bg.jpg');
+   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  font-family: 'Segoe UI', sans-serif;
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #333;
+  color: white;
+  text-align: center;
+  padding: 4rem 1rem;
 }
 
-/* 2. Header & Footer (Unified Style) */
+/* Header & Footer*/
 header, footer {
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(190, 188, 188, 0.95);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -368,7 +353,7 @@ footer h3 {
 }
 
 footer ul li img {
-  width: 32px;
+  width: 32px; /* Fixed size for social icons */
   height: 32px;
   transition: transform 0.3s ease;
 }
@@ -376,7 +361,7 @@ footer ul li img:hover {
   transform: scale(1.1);
 }
 
-/* 3. Slogan Section */
+/* Slogan Section */
 section h1 {
   text-align: center;
   font-size: 2rem;
@@ -390,7 +375,7 @@ section h1 {
   margin-top: 1rem;
 }
 
-/* 4. Service Grid */
+/* Service Grid */
 .service-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -404,7 +389,7 @@ section h1 {
 
 .service-card {
   text-align: center;
-  background-color: #fff;
+  background-color: #b9b7b7;
   padding: 1rem;
   border-radius: 8px;
   box-shadow: 0 1px 4px rgba(0,0,0,0.05);
@@ -416,7 +401,7 @@ section h1 {
 }
 
 .service-card img {
-  max-width: 100%;
+  max-width: 100%; /* Ensures service card images are responsive */
   height: auto;
   margin-bottom: 0.5rem;
 }
@@ -426,7 +411,7 @@ section h1 {
   color: #e67e22;
 }
 
-/* 5. Responsive Adjustments */
+/* Responsive Adjustments */
 @media (max-width: 768px) {
   header, footer {
     flex-direction: column;
@@ -449,26 +434,18 @@ section h1 {
   }
 }
 
-/* 1. Base Styles */
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
-}
-
 /* 2. Header */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #fff;
+  background-color: rgba(190, 188, 188, 0.95);
   border-bottom: 2px solid #e0e0e0;
 }
 
 header img {
-  width: 80px;
+  width: 80px; /* Logo fixed size */
   height: auto;
 }
 
@@ -491,7 +468,7 @@ nav a strong {
   color: #e67e22;
 }
 
-/* 3. Page Heading */
+/* Page Heading */
 main section:first-of-type {
   text-align: center;
   padding: 2rem 1rem;
@@ -508,7 +485,7 @@ main section:first-of-type p {
   color: #555;
 }
 
-/* 4. Filter Buttons */
+/* Filter Buttons */
 .filter-buttons {
   display: flex;
   justify-content: center;
@@ -533,7 +510,7 @@ main section:first-of-type p {
   color: white;
 }
 
-/* 5. Gallery Grid */
+/* Gallery Grid */
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -553,7 +530,7 @@ main section:first-of-type p {
 }
 
 .gallery-item img {
-  width: 100%;
+  width: 100%; 
   height: auto;
   border-radius: 4px;
   margin-bottom: 0.5rem;
@@ -570,9 +547,9 @@ main section:first-of-type p {
   color: #555;
 }
 
-/* 6. Footer */
+/* Footer */
 footer {
-  background-color: #fff;
+  background-color: rgba(190, 188, 188, 0.95);
   border-top: 2px solid #e0e0e0;
   padding: 2rem 1rem;
   text-align: center;
@@ -592,7 +569,7 @@ footer ul {
 }
 
 footer ul li img {
-  width: 32px;
+  width: 32px; /* Fixed size for social icons */
   height: 32px;
   transition: transform 0.3s ease;
 }
@@ -601,7 +578,7 @@ footer ul li img:hover {
   transform: scale(1.1);
 }
 
-/* 7. Responsive */
+/* Responsive */
 @media (max-width: 768px) {
   header {
     flex-direction: column;
@@ -618,13 +595,6 @@ footer ul li img:hover {
     margin-bottom: 1rem;
   }
 }
-/* 1. Base Styles */
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
-}
 
 /* 2. Header */
 header {
@@ -632,12 +602,12 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #fff;
+ background-color: rgba(190, 188, 188, 0.95);
   border-bottom: 2px solid #e0e0e0;
 }
 
 header img {
-  width: 80px;
+  width: 80px; /* Logo fixed size */
   height: auto;
 }
 
@@ -668,7 +638,7 @@ main section h1 {
   margin: 2rem 0 1rem;
 }
 
-/* 4. Table Styling */
+/* Table Styling */
 table {
   width: 90%;
   margin: auto;
@@ -698,7 +668,7 @@ tbody tr:hover {
   background-color: #f1f1f1;
 }
 
-/* 5. Footer */
+/* Footer */
 footer {
   background-color: #fff;
   border-top: 2px solid #e0e0e0;
@@ -721,7 +691,7 @@ footer ul {
 }
 
 footer ul li img {
-  width: 32px;
+  width: 32px; /* Fixed size for social icons */
   height: 32px;
   transition: transform 0.3s ease;
 }
@@ -730,7 +700,7 @@ footer ul li img:hover {
   transform: scale(1.1);
 }
 
-/* 6. Responsive Table */
+/* Responsive Table */
 @media (max-width: 768px) {
   header {
     flex-direction: column;
@@ -776,17 +746,6 @@ footer ul li img:hover {
     color: #555;
   }
 }
-/* 1. Base Styles */
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-image: url('gallery/contact-bg.jpg'); /* Replace with your actual image path */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  color: #333;
-}
 
 /* 2. Header */
 header {
@@ -794,13 +753,13 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(190, 188, 188, 0.95);
   border-bottom: 2px solid #e0e0e0;
   flex-wrap: wrap;
 }
 
 header img {
-  width: 80px;
+  width: 80px; /* Logo fixed size */
   height: auto;
 }
 
@@ -823,9 +782,9 @@ nav a strong {
   color: #e67e22;
 }
 
-/* 3. Main Content Box */
+/*  Main Content Box */
 main {
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(255, 255, 255, 0.616);
   margin: 2rem auto;
   padding: 2rem;
   max-width: 1000px;
@@ -874,11 +833,15 @@ iframe {
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   margin-top: 1rem;
+  /* Ensure iframe is responsive as well */
+  width: 100%; 
+  height: 300px;
+  border: none;
 }
 
-/* 5. Footer */
+/* Footer */
 footer {
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(190, 188, 188, 0.95);
   border-top: 2px solid #e0e0e0;
   padding: 2rem 1rem;
   text-align: center;
@@ -899,7 +862,7 @@ footer ul {
 }
 
 footer ul li img {
-  width: 32px;
+  width: 32px; /* Fixed size for social icons */
   height: 32px;
   transition: transform 0.3s ease;
 }
@@ -908,7 +871,7 @@ footer ul li img:hover {
   transform: scale(1.1);
 }
 
-/* 6. Responsive Layout */
+/* Responsive Layout */
 @media (max-width: 768px) {
   header {
     flex-direction: column;
@@ -930,17 +893,6 @@ footer ul li img:hover {
     padding: 1rem;
   }
 }
-/* 1. Base Styles */
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-image: url('gallery/quote-bg.jpg'); /* Replace with your actual image path */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  color: #333;
-}
 
 /* 2. Header */
 header {
@@ -954,7 +906,7 @@ header {
 }
 
 header img {
-  width: 80px;
+  width: 80px; /* Logo fixed size */
   height: auto;
 }
 
@@ -976,8 +928,8 @@ nav a:hover {
   color: #e67e22;
 }
 
-/* 3. Form Container */
-main {
+/* Form Container */
+.request-page { 
   background-color: rgba(255, 255, 255, 0.95);
   margin: 3rem auto;
   padding: 2rem;
@@ -986,34 +938,33 @@ main {
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-main h1 {
+.request-page h1 {
   font-size: 2rem;
   color: #e67e22;
   margin-bottom: 0.5rem;
 }
 
-main p {
+.request-page p {
   font-size: 1rem;
   color: #555;
   margin-bottom: 2rem;
 }
 
-/* 4. Form Styling */
-form {
+.request-page form {
   display: flex;
   flex-direction: column;
 }
 
-label {
+.request-page label {
   font-weight: 600;
   margin-bottom: 0.25rem;
   color: #333;
   text-align: left;
 }
 
-input,
-select,
-textarea {
+.request-page input,
+.request-page select,
+.request-page textarea {
   padding: 0.75rem;
   margin-bottom: 1.25rem;
   border: 1px solid #ccc;
@@ -1023,16 +974,16 @@ textarea {
   background-color: #fff;
 }
 
-textarea {
+.request-page textarea {
   resize: vertical;
 }
 
 /* 5. Submit Button */
-button[type="submit"] {
-  background-color: #d63031;
+.request-page button[type="submit"] {
+  background-color: #e67e22;
   color: white;
   border: none;
-  padding: 0.75rem;
+  padding: 0.75rem 1.5rem;
   font-size: 1rem;
   font-weight: bold;
   border-radius: 6px;
@@ -1042,13 +993,13 @@ button[type="submit"] {
   align-self: flex-start;
 }
 
-button[type="submit"]:hover {
-  background-color: #c0392b;
+.request-page button[type="submit"]:hover {
+  background-color: #fc9612;
 }
 
 /* 6. Footer */
 footer {
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(190, 188, 188, 0.95);
   border-top: 2px solid #e0e0e0;
   padding: 2rem 1rem;
   text-align: center;
@@ -1069,7 +1020,7 @@ footer ul {
 }
 
 footer ul li img {
-  width: 32px;
+  width: 32px; /* Fixed size for social icons */
   height: 32px;
   transition: transform 0.3s ease;
 }
@@ -1078,7 +1029,7 @@ footer ul li img:hover {
   transform: scale(1.1);
 }
 
-/* 7. Responsive */
+/* Responsive */
 @media (max-width: 768px) {
   header {
     flex-direction: column;
@@ -1095,12 +1046,199 @@ footer ul li img:hover {
     margin-bottom: 1rem;
   }
 
-  main {
+  .request-page { 
     margin: 1rem;
     padding: 1rem;
   }
 
-  button[type="submit"] {
+  .request-page button[type="submit"] {
+    width: 100%;
+    align-self: stretch;
+  }
+}
+
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: rgba(190, 188, 188, 0.95);
+  border-bottom: 2px solid #e0e0e0;
+  flex-wrap: wrap;
+}
+
+header img {
+  width: 80px; /* Logo fixed size */
+  height: auto;
+}
+
+nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #e67e22;
+}
+
+/* Main Content */
+.queries-page { 
+  background-color: rgba(255, 255, 255, 0.95);
+  margin: 3rem auto;
+  padding: 2rem;
+  max-width: 700px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.queries-page h1 {
+  font-size: 2rem;
+  color: #e67e22;
+  margin-bottom: 0.5rem;
+}
+
+.queries-page p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+/* Form Styling */
+.queries-page form {
+  display: flex;
+  flex-direction: column;
+}
+
+.queries-page label {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: #333;
+  text-align: left;
+}
+
+.queries-page input,
+.queries-page textarea {
+  padding: 0.75rem;
+  margin-bottom: 1.25rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 100%;
+  background-color: #fff;
+}
+
+.queries-page textarea {
+  resize: vertical;
+}
+
+/* Submit Button */
+.queries-page button[type="submit"] {
+  background-color: #e67e22;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: fit-content;
+  align-self: flex-start;
+}
+
+.queries-page button[type="submit"]:hover {
+  background-color: #cf711f;
+}
+
+/* FAQ Section */
+.queries-page h2 {
+  font-size: 1.5rem;
+  color: #e67e22;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.queries-page h3 {
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+  color: #333;
+}
+
+.queries-page a {
+  color: #e67e22;
+  text-decoration: none;
+}
+
+.queries-page a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: rgba(190, 188, 188, 0.95);
+  border-top: 2px solid #e0e0e0;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+footer h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+footer ul li img {
+  width: 32px; /* Fixed size for social icons */
+  height: 32px;
+  transition: transform 0.3s ease;
+}
+
+footer ul li img:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 1rem;
+  }
+
+  header img {
+    margin-bottom: 1rem;
+  }
+
+  .queries-page { 
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .queries-page button[type="submit"] {
     width: 100%;
     align-self: stretch;
   }
