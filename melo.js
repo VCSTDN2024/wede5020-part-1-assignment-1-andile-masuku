@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
-// melo.js
+
 
 document.addEventListener("DOMContentLoaded", () => {
   // Scroll to top button
@@ -125,6 +125,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
 // Lightbox functionality
 document.addEventListener("DOMContentLoaded", () => {
   const lightbox = document.getElementById("lightbox");
@@ -135,16 +136,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
   triggers.forEach(trigger => {
     trigger.addEventListener("click", () => {
-      lightbox.style.display = "block";
-      lightboxImg.src = trigger.src;
-      lightboxImg.alt = trigger.alt || "Expanded image";
-    });
+  document.body.classList.add("lightbox-open");
+  lightbox.style.display = "block";
+  lightboxImg.src = trigger.src;
+  lightboxImg.alt = trigger.alt || "Expanded image";
+});
   });
-
-  closeBtn.addEventListener("click", () => {
-    lightbox.style.display = "none";
-    lightboxImg.src = "";
-  });
+closeBtn.addEventListener("click", () => {
+  document.body.classList.remove("lightbox-open");
+  lightbox.style.display = "none";
+  lightboxImg.src = "";
+});
 
   window.addEventListener("click", (e) => {
     if (e.target === lightbox) {
@@ -153,15 +155,85 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
-trigger.addEventListener("click", () => {
-  document.body.classList.add("lightbox-open");
-  lightbox.style.display = "block";
-  lightboxImg.src = trigger.src;
-  lightboxImg.alt = trigger.alt || "Expanded image";
+
+// Fade-in animation
+document.addEventListener("DOMContentLoaded", () => {
+  const faders = document.querySelectorAll(".fade-in");
+  const appearOptions = {
+    threshold: 0.1,
+    rootMargin: "0px 0px -50px 0px"
+  };
+
+  const appearOnScroll = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add("visible");
+      observer.unobserve(entry.target);
+    });
+  }, appearOptions);
+
+  faders.fo// Fade-in animation
+document.addEventListener("DOMContentLoaded", () => {
+  const faders = document.querySelectorAll(".fade-in");
+  const appearOptions = {
+    threshold: 0.1,
+    rootMargin: "0px 0px -50px 0px"
+  };
+
+  const appearOnScroll = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add("visible");
+      observer.unobserve(entry.target);
+    });
+  }, appearOptions);
+
+  faders.forEach(fader => {
+    appearOnScroll.observe(fader);
+  });
+});rEach(fader => {
+    appearOnScroll.observe(fader);
+  });
 });
 
-closeBtn.addEventListener("click", () => {
-  document.body.classList.remove("lightbox-open");
-  lightbox.style.display = "none";
-  lightboxImg.src = "";
+// Fade-in animation
+document.addEventListener("DOMContentLoaded", () => {
+  const faders = document.querySelectorAll(".fade-in");
+  const appearOptions = {
+    threshold: 0.1,
+    rootMargin: "0px 0px -50px 0px"
+  };
+
+  const appearOnScroll = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add("visible");
+      observer.unobserve(entry.target);
+    });
+  }, appearOptions);
+
+  faders.forEach(fader => {
+    appearOnScroll.observe(fader);
+  });
+});
+
+// Fade-in animation
+document.addEventListener("DOMContentLoaded", () => {
+  const faders = document.querySelectorAll(".fade-in");
+  const appearOptions = {
+    threshold: 0.1,
+    rootMargin: "0px 0px -50px 0px"
+  };
+
+  const appearOnScroll = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add("visible");
+      observer.unobserve(entry.target);
+    });
+  }, appearOptions);
+
+  faders.forEach(fader => {
+    appearOnScroll.observe(fader);
+  });
 });
