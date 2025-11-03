@@ -43,25 +43,25 @@
     <!-- Gallery Grid -->
     <section class="gallery-grid">
       <div class="gallery-item fade-in" data-category="painting">
-        <img src="gallery/painting.png" alt="Painting in Linden" />
+        <img src="gallery/painting.png" alt="Painting in Linden" class="lightbox-trigger" />
         <h2>No 16, 7 Street Linden</h2>
         <p>Final painting for residential build.</p>
       </div>
 
       <div class="gallery-item fade-in" data-category="tiling">
-        <img src="gallery/tiling_gallery.png" alt="Tile installation in Parkhurst" />
+        <img src="gallery/tiling_gallery.png" alt="Tile installation in Parkhurst" class="lightbox-trigger" />
         <h2>Parkhurst</h2>
         <p>Floor tiling completed on floor only.</p>
       </div>
 
       <div class="gallery-item fade-in" data-category="plastering">
-        <img src="gallery/plastering_gallery.png" alt="Plastering exterior wall in Lonehill" />
+        <img src="gallery/plastering_gallery.png" alt="Plastering exterior wall in Lonehill" class="lightbox-trigger" />
         <h2>No 14 Plaisause Place Lonehill</h2>
         <p>Exterior plastering and remedial works with Plascon finish.</p>
       </div>
 
       <div class="gallery-item fade-in" data-category="damproofing">
-        <img src="gallery/dampproofing_gallery.png" alt="Dampproofing treatment in Linksfield" />
+        <img src="gallery/dampproofing_gallery.png" alt="Dampproofing treatment in Linksfield" class="lightbox-trigger" />
         <h2>Unit 10 Shamony Complex Linksfield</h2>
         <p>Dampproofing and wall restoration for moisture control still to be done.</p>
       </div>
@@ -79,6 +79,12 @@
       <li><a href="https://www.tiktok.com/@MeloxConstruction" target="_blank"><img src="gallery/tictok.png" alt="TikTok" /></a></li>
     </ul>
   </footer>
+
+  <!-- Lightbox Container -->
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img" alt="Expanded view" />
+  </div>
 
   <!-- Scroll to Top Button -->
   <button id="scrollTopBtn" title="Back to top">↑</button>

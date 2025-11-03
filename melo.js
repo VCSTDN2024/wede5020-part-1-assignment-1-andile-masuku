@@ -125,3 +125,43 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+// Lightbox functionality
+document.addEventListener("DOMContentLoaded", () => {
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
+  const closeBtn = document.querySelector(".close");
+
+  const triggers = document.querySelectorAll(".lightbox-trigger");
+
+  triggers.forEach(trigger => {
+    trigger.addEventListener("click", () => {
+      lightbox.style.display = "block";
+      lightboxImg.src = trigger.src;
+      lightboxImg.alt = trigger.alt || "Expanded image";
+    });
+  });
+
+  closeBtn.addEventListener("click", () => {
+    lightbox.style.display = "none";
+    lightboxImg.src = "";
+  });
+
+  window.addEventListener("click", (e) => {
+    if (e.target === lightbox) {
+      lightbox.style.display = "none";
+      lightboxImg.src = "";
+    }
+  });
+});
+trigger.addEventListener("click", () => {
+  document.body.classList.add("lightbox-open");
+  lightbox.style.display = "block";
+  lightboxImg.src = trigger.src;
+  lightboxImg.alt = trigger.alt || "Expanded image";
+});
+
+closeBtn.addEventListener("click", () => {
+  document.body.classList.remove("lightbox-open");
+  lightbox.style.display = "none";
+  lightboxImg.src = "";
+});
