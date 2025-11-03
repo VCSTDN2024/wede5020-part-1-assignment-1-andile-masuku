@@ -1,0 +1,902 @@
+/*
+===================================================
+1. GLOBAL & RESET STYLES
+===================================================
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  background-color: #adabab;
+  padding: 0 1rem;
+}
+
+/* General image responsiveness & standardization for content images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*
+===================================================
+2. COMMON LAYOUT (HEADER & FOOTER)
+===================================================
+*/
+
+/* Header & Navigation - ADJUSTED: Reduced vertical padding to move the header up */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 2rem; 
+  background-color: rgba(190, 188, 188, 0.95);
+  border-bottom: 2px solid #e0e0e0;
+  flex-wrap: wrap; 
+}
+
+/* Specific background color for Request/Quote Page header */
+.request-page-header {
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+header img {
+  width: 80px; /* Logo fixed size */
+  height: auto;
+  flex-shrink: 0;
+}
+
+.logo { /* Used in Services Page header */
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #e67e22;
+}
+
+nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+nav a:hover,
+nav a strong { 
+  color: #e67e22;
+}
+
+/* Footer - ADJUSTED: Increased vertical padding to move the footer down */
+footer {
+  color: white; 
+  padding: 2.5rem 1rem;
+  text-align: center;
+  border-top: 2px solid #e0e0e0;
+}
+
+/* Home Page specific footer (Dark background) */
+.home-footer {
+  background-color: #333;
+}
+
+/* About, Services, Gallery, Contact, Quote footer (Light/Gray background) */
+.common-footer {
+  background-color: rgba(190, 188, 188, 0.95);
+  color: #333; 
+}
+
+/* Price/Table Page specific footer (White background) */
+.price-footer {
+  background-color: #fff;
+  color: #333;
+}
+
+footer h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: inherit; 
+  flex-basis: 100%;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
+footer ul li img {
+  width: 32px; /* Fixed size for social icons */
+  height: 32px;
+  transition: transform 0.3s ease;
+}
+footer ul li img:hover {
+  transform: scale(1.1);
+}
+
+/*
+===================================================
+3. HOME PAGE SPECIFIC STYLES
+===================================================
+*/
+
+/* Home Page Hero Section Background */
+.home-page section:first-of-type {
+  background-image: url('gallery/home\ bg.png');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+section:first-of-type h1 {
+  font-size: 2.5rem;
+  color: #e67e22;
+}
+section:first-of-type h2 {
+  font-size: 2rem;
+  margin-top: 0.5rem;
+}
+section:first-of-type p a {
+  display: inline-block;
+  margin: 1rem 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #e67e22;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+}
+section:first-of-type p a:hover {
+  background-color: #cf711f;
+}
+
+/* Content Sections */
+section {
+  margin: 2rem 0;
+}
+section h3 {
+  font-size: 1.5rem;
+  color: #e67e22;
+  margin-bottom: 1rem;
+}
+
+/* Styling for "Who is Melox Construction" section */
+#meloxcon {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  margin-bottom: 2rem;
+}
+
+#meloxcon h3 {
+  grid-column: 1 / -1;
+  font-size: 1.75rem;
+  color: #e67e22;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+#meloxcon p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Standardized size for Home page content image */
+#meloxcon img {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 100%; 
+  height: 300px; /* FIXED HEIGHT */
+  object-fit: cover; /* Ensures image fills the fixed size without distortion */
+}
+
+section#introduction,
+section#summary {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/*
+===================================================
+4. ABOUT PAGE SPECIFIC STYLES
+===================================================
+*/
+
+/* About Section with Background Image */
+#about {
+  background-image: url('gallery/about\ bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 4rem 2rem;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+#about::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+#about h1,
+#about h5 {
+  position: relative;
+  z-index: 1;
+}
+#about h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+#about h5 {
+  font-size: 1.25rem;
+}
+
+/* Content Sections */
+main section {
+  background-color: #fff;
+  padding: 2rem;
+  margin: 2rem 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+main section h2 {
+  font-size: 1.5rem;
+  color: #e67e22;
+  margin-bottom: 1rem;
+}
+main section p,
+main section ul {
+  font-size: 1rem;
+  color: #333;
+}
+
+/*
+===================================================
+5. SERVICES PAGE SPECIFIC STYLES
+===================================================
+*/
+
+/* The body background is for the hero-like section at the top of the Services page */
+.services-body {
+  background-image: url('gallery/services-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+/* Slogan Section */
+.services-body section h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #e67e22;
+  margin-top: 2rem;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+/* Service Grid */
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.95);
+  margin: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.service-card {
+  text-align: center;
+  background-color: #b9b7b7;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Standardized size for Service card images */
+.service-card img {
+  max-width: 100%;
+  height: 180px; /* FIXED HEIGHT */
+  object-fit: cover; 
+  margin-bottom: 0.5rem;
+}
+
+.service-card h2 {
+  font-size: 1.2rem;
+  color: #e67e22;
+}
+
+/*
+===================================================
+6. GALLERY PAGE SPECIFIC STYLES
+===================================================
+*/
+
+/* Page Heading */
+main section:first-of-type {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+main section:first-of-type h1 {
+  font-size: 2rem;
+  color: #e67e22;
+  margin-bottom: 0.5rem;
+}
+
+main section:first-of-type p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Filter Buttons */
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem auto;
+  flex-wrap: wrap;
+}
+
+.filter-buttons button {
+  padding: 0.5rem 1rem;
+  border: 1px solid #e67e22;
+  background-color: white;
+  color: #e67e22;
+  font-weight: 500;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.filter-buttons button:hover {
+  background-color: #e67e22;
+  color: white;
+}
+
+/* Gallery Grid */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.gallery-item {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  overflow: hidden;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Standardized size for Gallery card images */
+.gallery-item img {
+  width: 100%;
+  height: 250px; /* FIXED HEIGHT */
+  object-fit: cover; 
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+.gallery-item h2 {
+  font-size: 1.2rem;
+  color: #e67e22;
+  margin-bottom: 0.25rem;
+}
+
+.gallery-item p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/*
+===================================================
+7. PRICE PAGE SPECIFIC STYLES
+===================================================
+*/
+
+/* Page Title */
+.price-page main section h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #e67e22;
+  margin: 2rem 0 1rem;
+}
+
+/* Table Styling */
+table {
+  width: 90%;
+  margin: auto;
+  border-collapse: collapse;
+  background-color: #fc9612;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+thead {
+  background-color: #e67e22;
+  color: white;
+}
+
+th, td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #e67e22;
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/*
+===================================================
+8. CONTACT PAGE SPECIFIC STYLES
+===================================================
+*/
+
+/* Main Content Box */
+main {
+  background-color: rgba(255, 255, 255, 0.616);
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 1000px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+main section {
+  margin-bottom: 2rem;
+}
+
+main h1 {
+  font-size: 1.75rem;
+  color: #e67e22;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+main h2 {
+  font-size: 1.25rem;
+  color: #333;
+  margin-top: 1.5rem;
+}
+
+main small {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+main p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+main a {
+  color: #e67e22;
+  text-decoration: none;
+}
+
+main a:hover {
+  text-decoration: underline;
+}
+
+/* Map Styling */
+iframe {
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin-top: 1rem;
+  width: 100%;
+  height: 300px;
+  border: none;
+}
+
+/*
+===================================================
+9. REQUEST/QUOTE PAGE SPECIFIC STYLES
+===================================================
+*/
+
+/* Form Container */
+.request-page {
+  background-color: rgba(255, 255, 255, 0.95);
+  margin: 3rem auto;
+  padding: 2rem;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.request-page h1 {
+  font-size: 2rem;
+  color: #e67e22;
+  margin-bottom: 0.5rem;
+}
+
+.request-page p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.request-page form {
+  display: flex;
+  flex-direction: column;
+}
+
+.request-page label {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: #333;
+  text-align: left;
+}
+
+.request-page input,
+.request-page select,
+.request-page textarea {
+  padding: 0.75rem;
+  margin-bottom: 1.25rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 100%;
+  background-color: #fff;
+}
+
+.request-page textarea {
+  resize: vertical;
+}
+
+/* Submit Button */
+.request-page button[type="submit"] {
+  background-color: #e67e22;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: fit-content;
+  align-self: flex-start;
+}
+
+.request-page button[type="submit"]:hover {
+  background-color: #fc9612;
+}
+
+/*
+===================================================
+10. QUERIES/FAQ PAGE SPECIFIC STYLES - UPDATED FOR ACCORDION
+===================================================
+*/
+
+.queries-page {
+  background-color: rgba(255, 255, 255, 0.95);
+  margin: 3rem auto;
+  padding: 2rem;
+  max-width: 700px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.queries-page h1 {
+  font-size: 2rem;
+  color: #e67e22;
+  margin-bottom: 0.5rem;
+}
+
+.queries-page p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+/* Form Styling */
+.queries-page form {
+  display: flex;
+  flex-direction: column;
+}
+
+.queries-page label {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: #333;
+  text-align: left;
+}
+
+.queries-page input,
+.queries-page textarea {
+  padding: 0.75rem;
+  margin-bottom: 1.25rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 100%;
+  background-color: #fff;
+}
+
+.queries-page textarea {
+  resize: vertical;
+}
+
+/* Submit Button */
+.queries-page button[type="submit"] {
+  background-color: #e67e22;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: fit-content;
+  align-self: flex-start;
+}
+
+.queries-page button[type="submit"]:hover {
+  background-color: #cf711f;
+}
+
+/* FAQ Accordion Styles */
+.queries-page h2 {
+  font-size: 1.5rem;
+  color: #e67e22;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.faq-item {
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  overflow: hidden; 
+}
+
+/* Styling for the Question (The toggle) */
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f9f9f9; 
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+  background-color: #eee;
+}
+
+/* Icon/Indicator */
+.faq-question::after {
+    content: '+'; 
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #e67e22;
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* State when the question is active/open */
+.faq-item.active .faq-question {
+    background-color: #e67e22; 
+    color: white;
+}
+
+.faq-item.active .faq-question::after {
+    content: '−'; 
+    color: white;
+    transform: rotate(0deg); 
+}
+
+/* Styling for the Answer (The hidden content) */
+.faq-answer {
+  max-height: 0;
+  padding: 0 1rem;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+  background-color: #fff;
+  color: #555;
+  font-size: 1rem;
+}
+
+/* State when the answer is visible */
+.faq-item.active .faq-answer {
+  max-height: 500px; /* Use a value larger than max possible content height */
+  padding: 1rem; 
+}
+
+/*
+===================================================
+11. RESPONSIVE DESIGN (COMMON)
+===================================================
+*/
+
+@media (max-width: 768px) {
+  /* Common Header adjustments */
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 1rem;
+  }
+
+  header img {
+    margin-bottom: 1rem;
+  }
+
+  /* Home Page specific mobile styles */
+  section#meloxcon {
+    grid-template-columns: 1fr;
+  }
+  section:first-of-type h1 {
+    font-size: 2rem;
+  }
+  section:first-of-type h2 {
+    font-size: 1.5rem;
+  }
+
+  /* About Page specific mobile styles */
+  #about h1 {
+    font-size: 2rem;
+  }
+  #about h5 {
+    font-size: 1rem;
+  }
+
+  /* Contact Page specific mobile styles */
+  .queries-page, .request-page, main {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  /* Quote/Query Page submit button stretch */
+  .request-page button[type="submit"],
+  .queries-page button[type="submit"] {
+    width: 100%;
+    align-self: stretch;
+  }
+
+  /* Price/Table Page specific mobile styles (Cards instead of table) */
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tbody tr {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  }
+
+  td {
+    padding: 0.5rem 0;
+    position: relative;
+  }
+
+  td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.25rem;
+    color: #555;
+  }
+}
+
+/*
+===================================================
+12. LIGHTBOX STYLES (For home page image pop-up)
+===================================================
+*/
+
+#lightbox-overlay {
+    display: none; /* HIDDEN BY DEFAULT. JavaScript shows it. */
+    position: fixed;
+    z-index: 1000; /* Ensure it's on top of everything */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Dark, semi-transparent background */
+    backdrop-filter: blur(2px); /* Optional: Adds a slight blur effect */
+    transition: opacity 0.3s ease;
+}
+
+#lightbox-content {
+    position: relative;
+    /* Center the lightbox content */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    padding: 20px;
+    width: 90%;
+    max-width: 700px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.8);
+    text-align: center;
+}
+
+#lightbox-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 80vh; /* Limits image height to 80% of viewport height */
+    object-fit: contain;
+}
+
+#lightbox-close {
+    color: #333;
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    font-size: 40px;
+    font-weight: 300; 
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+#lightbox-close:hover,
+#lightbox-close:focus {
+    color: #e67e22; /* Highlight primary color on hover */
+    text-decoration: none;
+}
