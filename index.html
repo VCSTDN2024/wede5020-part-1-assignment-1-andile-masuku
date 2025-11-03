@@ -5,12 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Home – Melox Construction</title>
   <link rel="stylesheet" href="style.css" />
+  <script defer src="melo.js"></script>
 </head>
-<body class="home-page" >
+<body class="home-page">
 
   <!--Navigation -->
   <header>
-    <img src="gallery/web logo.png" width="80" height="80"/>
+    <img src="gallery/web logo.png" width="80" height="80" alt="Melox Logo"/>
     <nav>
       <ul>
         <li><strong class="active"><a href="index.html">HOME</a></strong></li>
@@ -23,7 +24,7 @@
     </nav>
   </header>
 
-  <!-- Home Section also navigators -->
+  <!-- Hero Section -->
   <section class="hero">
     <h1>Building Homes</h1>
     <h2>Empowering Communities</h2>
@@ -33,7 +34,7 @@
     </p>
   </section>
 
-  <!-- Intro for home page -->
+  <!-- Intro Section -->
   <section id="meloxcon">
     <h3>Who is Melox Construction</h3>
     <p>
@@ -44,55 +45,49 @@
       of successful technical projects in Johannesburg, which include demographic, surveying and soil
       testing and building.
     </p>
-    <img src="gallery/melox.png" width="473" height="426" alt="Melox's branded shirt" />
-
+    <img src="gallery/melox.png" alt="Melox's branded shirt" class="lightbox-trigger" />
   </section>
 
   <section id="introduction">
     <h3>Introduction</h3>
     <p>
-        The business was incorporated as Melox Construction in 2012.<br>
-        Meluleki T Masuku (CEO- Construction, Civil & Contracts), Meluleki T Masuku (Communications & Marketing) and Nyasha
-        Dambadza (Project Manager) are senior management team.<br>
-        They are very well experienced in the type of work that they are presently carrying on with. Their tremendous knowledge in the
-        administration and management was gained through their considerable involvement with the business of high reputation
-        standards and experience.
-
+      The business was incorporated as Melox Construction in 2012.<br>
+      Meluleki T Masuku (CEO- Construction, Civil & Contracts), Meluleki T Masuku (Communications & Marketing) and Nyasha
+      Dambadza (Project Manager) are senior management team.<br>
+      They are very well experienced in the type of work that they are presently carrying on with. Their tremendous knowledge in the
+      administration and management was gained through their considerable involvement with the business of high reputation
+      standards and experience.
     </p>
   </section>
 
   <section id="summary">
     <h3>Executive Summary</h3>
     <p>
-        The demands on the corporate sector to contribution towards quality in South Africa construction industry have escalated
-        tremendously over the past years. The focus on the business economic empowerment is on reaching targets, one being to create
-        sustainable , affordable, high quality standards business.<br>
-        These policies aimed to make it easier for the people to gain access to capital and viable business opportunities.
-   
+      The demands on the corporate sector to contribution towards quality in South Africa construction industry have escalated
+      tremendously over the past years. The focus on the business economic empowerment is on reaching targets, one being to create
+      sustainable , affordable, high quality standards business.<br>
+      These policies aimed to make it easier for the people to gain access to capital and viable business opportunities.
     </p>
   </section>
 
-  
-<footer>
-  <h3>Contact Us</h3>
-  <ul>
-    <li>
-      <a href="https://wa.me/068 542 9233" target="_blank"><img src="gallery/whasapp.png" /></a>
-    </li>
-    <li>
-      <a href="https://www.linkedin.com/in/Meluleki Masuku" target="_blank"><img src="gallery/linkedin.png" /></a>
-    </li>
-    <li>
-      <a href="https://www.facebook.com/Melox Construction" target="_blank"><img src="gallery/facebook.png" /></a>
-    </li>
-    <li>
-      <a href="https://www.instagram.com/Melox Construction" target="_blank"><img src="gallery/ig.png" /></a>
-    </li>
-    <li>
-      <a href="https://www.tiktok.com/@Melox Construction" target="_blank"><img src="gallery/tictok.png" /></a>
-    </li>
-  </ul>
-</footer>
+  <!-- Footer -->
+  <footer class="home-footer">
+    <h3>Contact Us</h3>
+    <ul>
+      <li><a href="https://wa.me/0685429233" target="_blank"><img src="gallery/whasapp.png" alt="WhatsApp" /></a></li>
+      <li><a href="https://www.linkedin.com/in/MelulekiMasuku" target="_blank"><img src="gallery/linkedin.png" alt="LinkedIn" /></a></li>
+      <li><a href="https://www.facebook.com/MeloxConstruction" target="_blank"><img src="gallery/facebook.png" alt="Facebook" /></a></li>
+      <li><a href="https://www.instagram.com/MeloxConstruction" target="_blank"><img src="gallery/ig.png" alt="Instagram" /></a></li>
+      <li><a href="https://www.tiktok.com/@MeloxConstruction" target="_blank"><img src="gallery/tictok.png" alt="TikTok" /></a></li>
+    </ul>
+  </footer>
 
+  <!-- Lightbox Container -->
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img" alt="Expanded view" />
+  </div>
+
+  <script defer src="melo.js"></script>
 </body>
 </html>

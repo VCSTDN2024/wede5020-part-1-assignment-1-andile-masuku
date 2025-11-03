@@ -4,24 +4,28 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gallery – Melox Construction</title>
-   <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="View Melox Construction's gallery of completed projects and site progress across South Africa and the SADC region." />
+  <meta name="keywords" content="Melox Construction, gallery, projects, waterproofing, tiling, dampproofing, South Africa" />
+  <meta name="author" content="Melox Construction" />
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="melo.js"></script>
 </head>
 <body>
 
   <!-- Navigation -->
-<header>
-  <img src="gallery/web logo.png" alt="Melox Logo" />
-  <nav>
-    <ul>
-      <li><a href="index.html" target="_blank">HOME</a></li>
-      <li><a href="about.html" target="_blank">ABOUT</a></li>
-      <li><a href="services.html" target="_blank">SERVICES</a></li>
-      <li><a href="gallery.html" target="_blank"><strong>GALLERY</strong></a></li>
-      <li><a href="projects.html" target="_blank">PROJECTS</a></li>
-      <li><a href="contact.html" target="_blank">CONTACTS</a></li>
-    </ul>
-  </nav>
-</header>
+  <header>
+    <img src="gallery/web logo.png" alt="Melox Logo" />
+    <nav>
+      <ul>
+        <li><a href="index.html" target="_blank">HOME</a></li>
+        <li><a href="about.html" target="_blank">ABOUT</a></li>
+        <li><a href="services.html" target="_blank">SERVICES</a></li>
+        <li><a href="gallery.html" target="_blank"><strong>GALLERY</strong></a></li>
+        <li><a href="projects.html" target="_blank">PROJECTS</a></li>
+        <li><a href="contact.html" target="_blank">CONTACTS</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <!-- Page Heading -->
   <main>
@@ -29,62 +33,55 @@
       <h1>Our Work in Pictures</h1>
       <p>Explore our completed projects and on-site progress across South Africa and the SADC region.</p>
       <div class="filter-buttons">
-  <button>All</button>
-  <button>Waterproofing</button>
-  <button>Damproofing</button>
-  <button>Tiling & Ceiling</button>
-</div>
-    </section><br>
-
-    
+        <button data-filter="all">All</button>
+        <button data-filter="waterproofing">Waterproofing</button>
+        <button data-filter="damproofing">Damproofing</button>
+        <button data-filter="tiling">Tiling & Ceiling</button>
+      </div>
+    </section>
 
     <!-- Gallery Grid -->
     <section class="gallery-grid">
-      <div class="gallery-item">
-        <img src="gallery/painting.png"width= "446" height="277" alt="painting in Linden" />
+      <div class="gallery-item fade-in" data-category="painting">
+        <img src="gallery/painting.png" alt="Painting in Linden" />
         <h2>No 16, 7 Street Linden</h2>
         <p>Final painting for residential build.</p>
       </div>
 
-      <div class="gallery-item">
-        <img src="gallery/tiling_gallery.png" width= "446" height="277" alt="Tile installation in Parkhurst" />
+      <div class="gallery-item fade-in" data-category="tiling">
+        <img src="gallery/tiling_gallery.png" alt="Tile installation in Parkhurst" />
         <h2>Parkhurst</h2>
         <p>Floor tiling completed on floor only.</p>
       </div>
 
-      <div class="gallery-item">
-        <img src="gallery/plastering_gallery.png" width= "446" height="277" alt="Plastering exterior wall in Lonehill" />
+      <div class="gallery-item fade-in" data-category="plastering">
+        <img src="gallery/plastering_gallery.png" alt="Plastering exterior wall in Lonehill" />
         <h2>No 14 Plaisause Place Lonehill</h2>
         <p>Exterior plastering and remedial works with Plascon finish.</p>
       </div>
 
-      <div class="gallery-item">
-        <img src="gallery/dampproofing_gallery.png"width= "446" height="277" alt="Dampproofing treatment in Linksfield" />
+      <div class="gallery-item fade-in" data-category="damproofing">
+        <img src="gallery/dampproofing_gallery.png" alt="Dampproofing treatment in Linksfield" />
         <h2>Unit 10 Shamony Complex Linksfield</h2>
         <p>Dampproofing and wall restoration for moisture control still to be done.</p>
       </div>
     </section>
   </main>
-<footer>
-  <h3>Contact Us</h3>
-  <ul>
-    <li>
-      <a href="https://wa.me/068 542 9233" target="_blank"><img src="gallery/whasapp.png" /></a>
-    </li>
-    <li>
-      <a href="https://www.linkedin.com/in/Meluleki Masuku" target="_blank"><img src="gallery/linkedin.png" /></a>
-    </li>
-    <li>
-      <a href="https://www.facebook.com/Melox Construction" target="_blank"><img src="gallery/facebook.png" /></a>
-    </li>
-    <li>
-      <a href="https://www.instagram.com/Melox Construction" target="_blank"><img src="gallery/ig.png" /></a>
-    </li>
-    <li>
-      <a href="https://www.tiktok.com/@Melox Construction" target="_blank"><img src="gallery/tictok.png" /></a>
-    </li>
-  </ul>
-</footer>
+
+  <!-- Footer -->
+  <footer class="common-footer">
+    <h3>Contact Us</h3>
+    <ul>
+      <li><a href="https://wa.me/0685429233" target="_blank"><img src="gallery/whasapp.png" alt="WhatsApp" /></a></li>
+      <li><a href="https://www.linkedin.com/in/MelulekiMasuku" target="_blank"><img src="gallery/linkedin.png" alt="LinkedIn" /></a></li>
+      <li><a href="https://www.facebook.com/MeloxConstruction" target="_blank"><img src="gallery/facebook.png" alt="Facebook" /></a></li>
+      <li><a href="https://www.instagram.com/MeloxConstruction" target="_blank"><img src="gallery/ig.png" alt="Instagram" /></a></li>
+      <li><a href="https://www.tiktok.com/@MeloxConstruction" target="_blank"><img src="gallery/tictok.png" alt="TikTok" /></a></li>
+    </ul>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button id="scrollTopBtn" title="Back to top">↑</button>
 
 </body>
 </html>
