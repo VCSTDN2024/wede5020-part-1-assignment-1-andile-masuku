@@ -1,4 +1,4 @@
-<img width="1366" height="768" alt="Screenshot 2025-11-04 220226" src="https://github.com/user-attachments/assets/f75c1040-e2ca-4ea9-a060-d440e3208ac7" /># Melox Construction Website Project
+# Melox Construction Website Project
 - *Developer*: [ANDILE MASUKU]
 - *Student Number*: [ST10477470]
 - *Group*: [1]
@@ -174,5 +174,44 @@ These are the changes made.
 Animation was Added in some of the web pages to make the website's functionality and appearance look and feel good for the users.
 SEO Tags where implimented on the website for better funtionality and for a different feel for the website.
 
+
 ## REFERENCES 
+
+Perkins, M., Adams, C. & Obrecht, C., 2012. Canva. [Online] 
+Available at: https://share.google/9rJFxFklfULRubzuL
+[Accessed 8 September 2025].
+
+Wallace, D. E., 2016. Figma. [Online] 
+Available at: https://share.google/JXwsohgEeIzgsnXoJ
+[Accessed 08 September 2025].
+
+Gates, B. & Allen, P., 1975. Microsoft Copilot. [Online] 
+Available at: https://share.google/xJTUpHrzdYQftChd1
+[Accessed 1 Nov. 2025].
+
+Andrew, R., Spivak, A., Walton, P. & Kinlan, P., n.d. Web dev. [Online] 
+Available at: https://web.dev/learn/css
+[Accessed 31 Oct. 2025].
+
+Anon., 1999. w3schools. [Online] 
+Available at: https://www.w3schools.com/css/
+[Accessed 31 Oct. 2025].
+
+Mozilla Developer Network (MDN). 2025. HTML, CSS, and JavaScript documentation. [online]
+Available at: <https://developer.mozilla.org>
+[Accessed 31 Oct. 2025].
+
+GitHub Docs. 2025. Using Git for version control. [online] 
+Available at: <https://docs.github.com> 
+[Accessed 31 Oct. 2025].
+
+W3Schools. 2025. Web development tutorials. [online] 
+Available at: <https://www.w3schools.com> 
+[Accessed 31 Nov. 2025].
+
+Stack Overflow. 2025. Community-based troubleshooting and coding support. [online] 
+Available at: <https://stackoverflow.com> 
+[Accessed 31 Nov. 2025].
+
+The Independent Institute of Education. 2025. WIL Reflective Report Guidelines. [Course material].
 
