@@ -1,4 +1,4 @@
-# Melox Construction Website Project
+<img width="1366" height="768" alt="Screenshot 2025-11-04 220226" src="https://github.com/user-attachments/assets/f75c1040-e2ca-4ea9-a060-d440e3208ac7" /># Melox Construction Website Project
 - *Developer*: [ANDILE MASUKU]
 - *Student Number*: [ST10477470]
 - *Group*: [1]
@@ -154,4 +154,25 @@ this is how the website now looks
 #### Home Page
 <img width="576" height="428" alt="Screenshot 2025-11-04 220111" src="https://github.com/user-attachments/assets/72fdbd29-8f17-40cd-b707-962ac554e997" />
 
+
+#### About Us Page
+<img width="576" height="428" alt="Screenshot 2025-11-04 220125" src="https://github.com/user-attachments/assets/31107293-1693-43db-8d33-3527ddb3dcb9" />
+
+
+#### Services Page
+<img width="576" height="428" alt="Screenshot 2025-11-04 220141" src="https://github.com/user-attachments/assets/cfae2d8a-bb12-4d29-80bd-8283c0aeafbb" />
+
+
+#### Gallery Page
+<img width="576" height="428" alt="Screenshot 2025-11-04 220206" src="https://github.com/user-attachments/assets/3aaa4335-1b82-4edf-98a1-ab1ab5b8f043" />
+
+
+#### Contact Us Page
+<img width="576" height="428" alt="Screenshot 2025-11-04 220226" src="https://github.com/user-attachments/assets/8fbcf818-b9f0-4b2d-bd0d-5973d9951e95" />
+
+These are the changes made. 
+Animation was Added in some of the web pages to make the website's functionality and appearance look and feel good for the users.
+SEO Tags where implimented on the website for better funtionality and for a different feel for the website.
+
+## REFERENCES 
 
