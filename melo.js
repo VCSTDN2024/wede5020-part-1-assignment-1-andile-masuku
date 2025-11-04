@@ -28,7 +28,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-
 document.addEventListener("DOMContentLoaded", () => {
   // Scroll to top button
   const scrollBtn = document.getElementById("scrollTopBtn");
@@ -40,7 +39,6 @@ document.addEventListener("DOMContentLoaded", () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
 });
-// melo.js
 
 document.addEventListener("DOMContentLoaded", () => {
   // Scroll to top button
@@ -74,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
     appearOnScroll.observe(fader);
   });
 });
-// melo.js
+
 
 document.addEventListener("DOMContentLoaded", () => {
   // Scroll to top button

@@ -1,8 +1,4 @@
-/*
-===================================================
-1. GLOBAL & RESET STYLES
-===================================================
-*/
+/* STYLES */
 * {
   margin: 0;
   padding: 0;
@@ -14,31 +10,25 @@ body {
   font-size: 1rem;
   line-height: 1.6;
   color: #333;
-  /* Specific body background colors are overridden by page-specific styles later */
+  /* Specific body background colors */
   background-color: #adabab;
   padding: 0 1rem;
 }
 
-/* General image responsiveness & standardization for content images */
+/* General image responsiveness */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/*
-===================================================
-2. COMMON LAYOUT (HEADER & FOOTER)
-===================================================
-*/
+/* COMMON LAYOUT (HEADER & FOOTER) */
 
 /* Header & Navigation */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* ADJUSTED: Reduced vertical padding to move the header up */
   padding: 0.75rem 2rem;
-  /* This background is used on most pages (Home, About, Gallery, Contact, Quote) */
   background-color: rgba(190, 188, 188, 0.95);
   border-bottom: 2px solid #e0e0e0;
   flex-wrap: wrap; /* Allows for wrapping on smaller screens */
@@ -50,7 +40,7 @@ header {
 }
 
 header img {
-  width: 80px; /* Logo fixed size */
+  width: 80px; 
   height: auto;
   flex-shrink: 0; /* Prevents logo from shrinking */
 }
@@ -80,26 +70,21 @@ nav a strong { /* Strong for active page link */
 
 /* Footer */
 footer {
-  /* Set common footer styles. Backgrounds will be overwritten below. */
-  color: white; /* Default text color for some footer variants */
-  /* ADJUSTED: Increased vertical padding to move the footer down */
+  color: white;
   padding: 2.5rem 1rem;
   text-align: center;
   border-top: 2px solid #e0e0e0;
 }
 
-/* Home Page specific footer (Dark background) */
 .home-footer {
   background-color: #333;
 }
 
-/* About, Services, Gallery, Contact, Quote footer (Light/Gray background) */
 .common-footer {
   background-color: rgba(190, 188, 188, 0.95);
   color: #333; /* Text color for light background */
 }
 
-/* Price/Table Page specific footer (White background) */
 .price-footer {
   background-color: #fff;
   color: #333;
@@ -128,11 +113,7 @@ footer ul li img:hover {
   transform: scale(1.1);
 }
 
-/*
-===================================================
-3. HOME PAGE SPECIFIC STYLES
-===================================================
-*/
+/* HOME PAGE STYLES */
 
 /* Home Page Hero Section Background */
 .home-page section:first-of-type {
@@ -202,7 +183,6 @@ section h3 {
   color: #333;
 }
 
-/* ADJUSTED: Standardized size for Home page content image */
 #meloxcon img {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -219,11 +199,7 @@ section#summary {
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
-/*
-===================================================
-4. ABOUT PAGE SPECIFIC STYLES
-===================================================
-*/
+/* ABOUT PAGE STYLES */
 
 /* About Section with Background Image */
 #about {
@@ -276,11 +252,7 @@ main section ul {
   color: #333;
 }
 
-/*
-===================================================
-5. SERVICES PAGE SPECIFIC STYLES
-===================================================
-*/
+/* SERVICES PAGE STYLES */
 
 /* The body background is for the hero-like section at the top of the Services page */
 .services-body {
@@ -331,7 +303,6 @@ main section ul {
   transform: translateY(-5px);
 }
 
-/* ADJUSTED: Standardized size for Service card images */
 .service-card img {
   max-width: 100%;
   height: 180px; /* FIXED HEIGHT */
@@ -344,11 +315,7 @@ main section ul {
   color: #e67e22;
 }
 
-/*
-===================================================
-6. GALLERY PAGE SPECIFIC STYLES
-===================================================
-*/
+/* GALLERY PAGE STYLES */
 
 /* Page Heading */
 main section:first-of-type {
@@ -411,7 +378,6 @@ main section:first-of-type p {
   padding: 1rem;
 }
 
-/* ADJUSTED: Standardized size for Gallery card images */
 .gallery-item img {
   width: 100%;
   height: 250px; /* FIXED HEIGHT */
@@ -431,11 +397,7 @@ main section:first-of-type p {
   color: #555;
 }
 
-/*
-===================================================
-7. PRICE PAGE SPECIFIC STYLES
-===================================================
-*/
+/* PROJECTS PAGE STYLES */
 
 /* Page Title */
 .price-page main section h1 {
@@ -475,11 +437,7 @@ tbody tr:hover {
   background-color: #f1f1f1;
 }
 
-/*
-===================================================
-8. CONTACT PAGE SPECIFIC STYLES
-===================================================
-*/
+/* CONTACT PAGE STYLES */
 
 /* Main Content Box */
 main {
@@ -537,11 +495,7 @@ iframe {
   border: none;
 }
 
-/*
-===================================================
-9. REQUEST/QUOTE PAGE SPECIFIC STYLES
-===================================================
-*/
+/* REQUEST/QUOTE PAGE STYLES */
 
 /* Form Container */
 .request-page {
@@ -612,11 +566,7 @@ iframe {
   background-color: #fc9612;
 }
 
-/*
-===================================================
-10. QUERIES/FAQ PAGE SPECIFIC STYLES
-===================================================
-*/
+/* QUERIES/FAQ PAGE STYLES */
 
 .queries-page {
   background-color: rgba(255, 255, 255, 0.95);
@@ -710,11 +660,7 @@ iframe {
 }
 
 
-/*
-===================================================
-11. RESPONSIVE DESIGN (COMMON)
-===================================================
-*/
+/* RESPONSIVE DESIGN */
 
 @media (max-width: 768px) {
   /* Common Header adjustments */
@@ -768,7 +714,7 @@ iframe {
     align-self: stretch;
   }
 
-  /* Price/Table Page specific mobile styles (Cards instead of table) */
+  /* Project Page specific mobile styles (Cards instead of table) */
   table, thead, tbody, th, td, tr {
     display: block;
   }
@@ -798,9 +744,7 @@ iframe {
     color: #555;
   }
 }
-/* ================================================
-12. LIGHTBOX STYLES
-=================================================== */
+/* LIGHTBOX STYLES */
 .lightbox {
   display: none;
   position: fixed;
@@ -858,9 +802,7 @@ iframe {
 #scrollTopBtn:hover {
   background-color: #cf711f;
 }
-/* ================================================
-12. SCROLL TO TOP BUTTON
-=================================================== */
+/* SCROLL TO TOP BUTTON */
 #scrollTopBtn {
   display: none;
   position: fixed;
@@ -881,9 +823,7 @@ iframe {
   background-color: #cf711f;
 }
 
-/* ================================================
-13. FADE-IN ANIMATION FOR SERVICE CARDS
-=================================================== */
+/* FADE-IN ANIMATION FOR SERVICE CARDS */
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
@@ -894,9 +834,7 @@ iframe {
   opacity: 1;
   transform: translateY(0);
 }
-/* ================================================
-14. SERVICE CARD HOVER & DESCRIPTION
-=================================================== */
+/* SERVICE CARD HOVER & DESCRIPTION */
 .service-card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -911,9 +849,7 @@ iframe {
   color: #333;
   margin-top: 0.5rem;
 }
-/* ================================================
-15. GALLERY FADE-IN + FILTER STYLING
-=================================================== */
+/* GALLERY FADE-IN + FILTER STYLING */
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
@@ -940,9 +876,7 @@ iframe {
   background-color: #e67e22;
   color: white;
 }
-/* ================================================
-16. LIGHTBOX STYLES
-=================================================== */
+/* LIGHTBOX STYLES */
 .lightbox {
   display: none;
   position: fixed;
@@ -983,9 +917,7 @@ iframe {
 body.lightbox-open {
   overflow: hidden;
 }
-/* ================================================
-17. PROJECTS TABLE FADE-IN + RESPONSIVE
-=================================================== */
+/*PROJECTS TABLE FADE-IN + RESPONSIVE */
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
@@ -1028,9 +960,7 @@ body.lightbox-open {
   }
 }
 
-/* ================================================
-18. CONTACT PAGE FADE-IN
-=================================================== */
+/* CONTACT PAGE FADE-IN */
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
@@ -1042,9 +972,7 @@ body.lightbox-open {
   transform: translateY(0);
 }
 
-/* ================================================
-19. QUERIES PAGE FORM + FADE-IN
-=================================================== */
+/* QUERIES PAGE FORM + FADE-IN */
 .queries-page form {
   display: flex;
   flex-direction: column;
@@ -1094,9 +1022,7 @@ body.lightbox-open {
   transform: translateY(0);
 }
 
-/* ================================================
-20. REQUEST PAGE FORM + FADE-IN
-=================================================== */
+/* REQUEST PAGE FORM + FADE-IN */
 .request-page form {
   display: flex;
   flex-direction: column;
