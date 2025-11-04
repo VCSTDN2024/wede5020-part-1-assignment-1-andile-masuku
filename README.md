@@ -138,3 +138,20 @@ Melox Construction is more than a business—it’s a story of building homes, c
 
 ## Git link
 https://github.com/VCSTDN2024/wede5020-part-1-assignment-1-andile-masuku.git
+
+
+## CHANGELOG
+
+### Part 3 
+
+Website was changed a little bit compared to part 1 and 2. Most CSS was changed for the website to look more user friendly.
+JavaScript was then added for The websites Fuctionality and Responsiveness. The website is suppotive for both desktop and mobile devices
+A Video was added in the About Us page and more content was added so that it can look like a real website 
+
+
+this is how the website now looks 
+
+#### Home Page
+<img width="576" height="428" alt="Screenshot 2025-11-04 220111" src="https://github.com/user-attachments/assets/72fdbd29-8f17-40cd-b707-962ac554e997" />
+
+
